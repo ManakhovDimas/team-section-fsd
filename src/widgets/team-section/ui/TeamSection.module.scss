@@ -1,0 +1,131 @@
+.section {
+  padding: 60px 20px;
+  background-color: #FAFAFA;
+}
+
+.container {
+  max-width: 1418px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.textContent {
+  max-width: 800px;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #1A1A1A;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  color: #5F6C7B;
+  line-height: 1.6;
+}
+
+.headerImage {
+  width: 443px;
+  height: 144px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(320px, 1fr));
+  gap: 46px;
+  margin-bottom: 50px;
+
+  @media (max-width: 1458px) {
+    grid-template-columns: repeat(3, minmax(320px, 1fr));
+  }
+
+  @media (max-width: 1092px) {
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+  }
+
+  @media (max-width: 726px) {
+    grid-template-columns: minmax(min(100%, 320px), 1fr);
+  }
+}
+
+.ctaBlock {
+  background-color: #EEF2F6;
+  border-radius: 32px;
+  padding: 48px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ctaTitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 44px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: #1A1A1A;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.ctaSubtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.015em;
+  color: #5F6C7B;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 32px;
+  max-width: 700px;
+}
+
+.ctaButton {
+  padding: 12px 32px !important;
+  background-color: #FFFFFF !important;
+}
+
+@media (max-width: 1024px) {
+  .headerImage {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionHeader {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .textContent {
+    text-align: center;
+  }
+
+  .headerImage {
+    width: 100%;
+    max-width: 443px;
+    margin-top: 24px;
+  }
+}
